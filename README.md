@@ -20,14 +20,13 @@ Dans la console dans le fichier racine du serveur web
 
   * curl 192.168.0.21/sf_bash/chmod.sh | sh
 
-  * php app/console generate:bundle
-  ** WCS/TerrainBundle
+  * php app/console generate:bundle --no-interaction --namespace="WCS/TerrainBundle" --dir="src" --bundle-name="WCSTerrainBundle" --format="yml" --structure
  
-  * php app/console doctrine:generate:entity
-  ** WCSTerrainBundle:Terrain
+  * php app/console doctrine:generate:entity --no-interaction --entity="WCSTerrainBundle:Terrain" --fields="name:string(255) latitude:float longitude:float" --format=yml
   
-  * php app/console doctrine:generate:crud
-  ** WCSTerrainBundle:Terrain
+  * php app/console doctrine:schema:update --force
+  
+  * php app/console doctrine:generate:crud --no-interaction --entity=WCSTerrainBundle:Terrain --format=yml --with-write
   
 
 Emplacement du code spécifique à l'atelier :
