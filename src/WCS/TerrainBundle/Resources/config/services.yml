@@ -1,0 +1,4 @@
+services:
+    wcs_terrain.load:
+        class: WCS\TerrainBundle\Services\LoadTerrains
+        arguments: [@doctrine.orm.entity_manager]
