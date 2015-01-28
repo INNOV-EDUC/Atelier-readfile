@@ -21,13 +21,13 @@ Dans la console dans le fichier racine du serveur web
   * curl 192.168.0.21/sf_bash/chmod.sh | sh
 
   * php app/console generate:bundle
-  * WCS/TerrainBundle
+  ** WCS/TerrainBundle
  
   * php app/console doctrine:generate:entity
-  * WCSTerrainBundle:Terrain
+  ** WCSTerrainBundle:Terrain
   
   * php app/console doctrine:generate:crud
-  * WCSTerrainBundle:Terrain
+  ** WCSTerrainBundle:Terrain
   
 
 Emplacement du code spécifique à l'atelier :
