@@ -28,6 +28,10 @@ Dans la console dans le fichier racine du serveur web
   
   * php app/console doctrine:generate:crud --no-interaction --entity=WCSTerrainBundle:Terrain --format=yml --with-write
   
+  * mkdir web/uploads
+  
+  * wget -P web/uploads/ 192.168.0.21/terrain.csv
+  
 
 Emplacement du code spécifique à l'atelier :
 --------------------------------------------
